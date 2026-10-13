@@ -32,7 +32,7 @@
         android:id="@+id/etType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Тип (Силовая, Кардио, Кроссфит)"
+        android:hint="Тип (Split, Fullbody)"
         android:layout_marginBottom="12dp"/>
 
     <EditText
@@ -47,7 +47,7 @@
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Выполненные упражнения (необязательно)"
+        android:hint="Выполненные упражнения (например push-up)"
         android:inputType="textMultiLine"
         android:layout_marginBottom="20dp"/>
 
