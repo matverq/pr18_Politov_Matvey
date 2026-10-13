@@ -40,7 +40,7 @@ class WorkoutFormFragment : Fragment(R.layout.fragment_workoutform) {
             val desc = etDescription.text.toString().trim()
 
             if (date.isEmpty() || type.isEmpty() || durationStr.isEmpty()) {
-                Toast.makeText(requireContext(), "Заполните обязательные поля!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Заполните обязательные поля", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -59,7 +59,7 @@ class WorkoutFormFragment : Fragment(R.layout.fragment_workoutform) {
             val updatedJson = gson.toJson(workoutList)
             sharedPrefs.edit().putString("WORKOUTS_LIST", updatedJson).apply()
 
-            Toast.makeText(requireContext(), "Тренировка записана!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Тренировка записана", Toast.LENGTH_SHORT).show()
 
             etDate.text.clear()
             etType.text.clear()
