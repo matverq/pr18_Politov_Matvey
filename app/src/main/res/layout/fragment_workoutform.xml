@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Спортсмен: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новая тренировка"
+        android:textSize="20sp"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Дата (ДД.ММ.ГГГГ)"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Тип (Силовая, Кардио, Кроссфит)"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Длительность (мин)"
+        android:inputType="number"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Выполненные упражнения (необязательно)"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnSaveWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2E7D32"
+        android:text="Сохранить тренировку"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnViewHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#555555"
+        android:text="Открыть историю" />
+</LinearLayout>
